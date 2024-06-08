@@ -18,13 +18,16 @@
 <form id="mainForm" action="https://docs.google.com/forms/d/e/1FAIpQLSft2R0WqMWlSfok7_cV19xo0UthC4zp01RVAIvrp1e3vXsUTA/formResponse" method="POST">
 
     <!-- DATA Group -->
-    <div id="dataGroup">
+    <div id="dataGroup" class="form-group">
         <div id="entry.199079934-container">
-            <label for='entry.199079934'>Nama:</label>
-            <input autocomplete="name" type="text" name="entry.199079934" id="entry.199079934" placeholder="Nama Lengkap">
+            <label for="entry.199079934">
+				<h3 class="input-header">Nama:</h3>
+				<p class="input-desc">Mohon masukkan nama yang sesuai dengan bukti pembayaran nanti.</p>
+            	<input autocomplete="name" type="text" name="entry.199079934" id="entry.199079934" placeholder="Nama Lengkap">
+			</label>
         </div>
-        <div id='entry.603622722-container'>
-            <label for='entry.603622722'>Email:</label>
+        <div id="entry.603622722-container">
+            <label for="entry.603622722">Email:</label>
             <input autocomplete="email" type="email" name="entry.603622722" id="entry.603622722" placeholder="email@email.com">
         </div>
         <div id='entry.368837724-container'>
@@ -54,7 +57,7 @@ METODE
     </div>
 
     <!-- KIRIM Group -->
-    <div id="kirimGroup" class="hidden">
+    <div id="kirimGroup" class="form-group hidden">
         <div id='entry.436673105-container'>
 SAMA?
             <label for='entry.436673105_1'>
@@ -95,7 +98,7 @@ SAMA?
     </div>
 
     <!-- AJANG Group -->
-    <div id="ajangGroup" class="hidden">
+    <div id="ajangGroup" class="form-group hidden">
         <div id='entry.50010751-container'>
             <label for='entry.50010751'>password:</label>
             <input autocomplete="on" type="text" name="entry.50010751" id="entry.50010751" placeholder="KATAKUNCI">
@@ -103,7 +106,7 @@ SAMA?
     </div>
 
     <!-- PESAN Group -->
-    <div id="pesanGroup" class="hidden">
+    <div id="pesanGroup" class="form-group hidden">
         <div id='entry.1073892163-container'>
 SURVEY
             <label for='entry.1073892163_1'>
@@ -196,8 +199,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     showGroup(currentStep);
 });
-
-
 </script>
 </body>
 </html>
