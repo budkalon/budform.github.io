@@ -18,7 +18,8 @@
 <form id="mainForm" action="https://docs.google.com/forms/d/e/1FAIpQLSft2R0WqMWlSfok7_cV19xo0UthC4zp01RVAIvrp1e3vXsUTA/formResponse" method="POST">
 
     <!-- DATA Group -->
-    <div id="dataGroup" class="form-group">
+    <fieldset id="dataGroup" class="form-group">
+		<legend>Data Pemesan</legend>
         <div id="entry.199079934-container">
             <label for="entry.199079934">
 				<h3 class="input-header">Nama:</h3>
@@ -54,10 +55,11 @@ METODE
                 <input type="radio" name="entry.1175112849" id="entry.1175112849_3" value="ps"> PS
             </label>
         </div>
-    </div>
+    </fieldset>
 
     <!-- KIRIM Group -->
-    <div id="kirimGroup" class="form-group hidden">
+    <fieldset id="kirimGroup" class="form-group hidden">
+		<legend>Pengiriman</legend>
         <div id='entry.436673105-container'>
 SAMA?
             <label for='entry.436673105_1'>
@@ -95,18 +97,20 @@ SAMA?
             <label for='entry.291225708'>patokan:</label>
             <input autocomplete="on" type="text" name="entry.291225708" id="entry.291225708" placeholder="Rumah depan gang">
         </div>
-    </div>
+    </fieldset>
 
     <!-- AJANG Group -->
-    <div id="ajangGroup" class="form-group hidden">
+    <fieldset id="ajangGroup" class="form-group hidden">
+		<legend>Pengambilan Ajang</legend>
         <div id='entry.50010751-container'>
             <label for='entry.50010751'>password:</label>
             <input autocomplete="on" type="text" name="entry.50010751" id="entry.50010751" placeholder="KATAKUNCI">
         </div>
-    </div>
+    </fieldset>
 
     <!-- PESAN Group -->
-    <div id="pesanGroup" class="form-group hidden">
+    <fieldset id="pesanGroup" class="form-group hidden">
+		<legend>Ringkasan dan Pesan</legend>
         <div id='entry.1073892163-container'>
 SURVEY
             <label for='entry.1073892163_1'>
@@ -126,7 +130,7 @@ SURVEY
             <label for='entry.927780524'>Pesan:</label>
             <input type="textarea" name="entry.927780524" id="entry.927780524" placeholder="Pesan dan catatan tambahan">
         </div>
-    </div>
+    </fieldset>
 
     <!-- Pagination Buttons -->
     <button type="button" id="prevButton" class="hidden">Kembali</button>
