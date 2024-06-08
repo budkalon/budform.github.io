@@ -21,55 +21,47 @@
     <fieldset id="dataGroup" class="form-group">
 		<legend>Data Pemesan</legend>
         <div id="entry.199079934-container" class="quest quest-text">
-            <label for="entry.199079934" class="mainlabel">
 				<h3 class="input-header">Nama</h3>
 				<p class="input-desc">Mohon masukkan nama yang sesuai dengan bukti pembayaran nanti.</p>
             	<input autocomplete="name" type="text" name="entry.199079934" id="entry.199079934" placeholder="Nama Lengkap">
-			</label>
         </div>
         <div id="entry.603622722-container" class="quest quest-text">
-            <label for="entry.603622722" class="mainlabel">
 				<h3 class="input-header">Email</h3>
 				<p class="input-desc">Mohon masukkan email dengan benar.</p>
             	<input autocomplete="email" type="email" name="entry.603622722" id="entry.603622722" placeholder="email@email.com">
-			</label>
-            <label for="entry.1154729410" class="mainlabel">
 				<p class="input-desc">Mohon ulangi email.</p>
             	<input autocomplete="email" type="email" name="entry.1154729410" id="entry.1154729410" placeholder="email@email.com">
-			</label>
         </div>
         <div id='entry.368837724-container' class="quest quest-text">
-            <label for='entry.368837724' class="mainlabel">
 				<h3 class="input-header">WhatsApp</h3>
 				<p class="input-desc">Mohon masukkan email dengan benar.</p>
             	<input autocomplete="tel" type="text" name="entry.368837724" id="entry.368837724" placeholder="6200000000000">
-			</label>
         </div>
         <div id='entry.1623915758-container' class="quest quest-text">
-            <label for='entry.1623915758' class="mainlabel">
 				<h3 class="input-header">Media Sosial</h3>
 				<p class="input-desc">Mohon masukkan email dengan benar.</p>
             	<input autocomplete="on" type="text" name="entry.1623915758" id="entry.1623915758" placeholder="@username (Platform)">
-			</label>
         </div>
+		<hr>
         <div id='entry.246909151-container' class="quest quest-produk">
-            <label for='entry.246909151' class="productlabel">
 				<h3 class="input-header">Produk</h3>
 				<p class="input-desc">Mohon masukkan email dengan benar.</p>
             	<input type="number" name="entry.246909151" min="1" id="entry.246909151" value="1" placeholder="2">
-			</label>
         </div>
         <div id='entry.1175112849-container' class="quest quest-radio">
 			<h3 class="input-header">Metode Pengambilan</h3>
 			<p class="input-desc">Mohon masukkan email dengan benar.</p>
             <label for='entry.1175112849_1' class="radiolabel">
-                <input type="radio" name="entry.1175112849" id="entry.1175112849_1" value="kr"> KR
+                <input type="radio" name="entry.1175112849" id="entry.1175112849_1" value="kr">
+				<span class="radio-label">Pengiriman</span>
             </label>
             <label for='entry.1175112849_2' class="radiolabel">
-                <input type="radio" name="entry.1175112849" id="entry.1175112849_2" value="cf"> CF
+                <input type="radio" name="entry.1175112849" id="entry.1175112849_2" value="cf">
+				<span class="radio-label">Comic Frontier</span>
             </label>
             <label for='entry.1175112849_3' class="radiolabel">
-                <input type="radio" name="entry.1175112849" id="entry.1175112849_3" value="ps"> PS
+                <input type="radio" name="entry.1175112849" id="entry.1175112849_3" value="ps">
+				<span class="radio-label">Pesta Komik Bandung</span>
             </label>
         </div>
     </fieldset>
@@ -77,50 +69,60 @@
     <!-- KIRIM Group -->
     <fieldset id="kirimGroup" class="form-group hidden">
 		<legend>Pengiriman</legend>
-        <div id='entry.436673105-container'>
-SAMA?
+        <div id='entry.436673105-container' class="quest quest-radio">
+			<h3 class="input-header">Apakah Nama Penerima Sama dengan Nama Pemesan?</h3>
+			<p class="input-desc">Apakah Nama Penerima Sama dengan Nama Pemesan?</p>
             <label for='entry.436673105_1'>
-                <input type="radio" name="entry.436673105" id="entry.436673105_1" value="TRUE"> TRUE
+                <input type="radio" name="entry.436673105" id="entry.436673105_1" value="TRUE">
+				<span class="radio-label">Ya</span>
             </label>
             <label for='entry.436673105_2'>
-                <input type="radio" name="entry.436673105" id="entry.436673105_2" value="FALSE"> FALSE
+                <input type="radio" name="entry.436673105" id="entry.436673105_2" value="FALSE">
+				<span class="radio-label">Tidak</span>
             </label>
         </div>
-        <div id='entry.1977903973-container' class="hidden">
-            <label for='entry.1977903973'>Nama Penerima:</label>
+        <div id='entry.1977903973-container' class="hidden quest quest-text">
+				<h3 class="input-header">Nama Penerima</h3>
+				<p class="input-desc">Mohon masukkan nama penerima.</p>
             <input type="text" name="entry.1977903973" id="entry.1977903973" placeholder="Nama Penerima">
         </div>
-        <div id='entry.70877665-container'>
-            <label for='entry.70877665'>lamat1:</label>
-            <input autocomplete="address-line1" type="text" name="entry.70877665" id="entry.70877665" placeholder="Jl. Jalan Rumah no 01 RT/RW 01/02">
-        </div>
-        <div id='entry.721923077-container'>
-            <label for='entry.721923077'>kecamatan:</label>
-            <input autocomplete="address-line2" type="text" name="entry.721923077" id="entry.721923077" placeholder="Kecamatan">
-        </div>
-        <div id='entry.2067142482-container'>
-            <label for='entry.2067142482'>kota:</label>
-            <input autocomplete="address-level2" type="text" name="entry.2067142482" id="entry.2067142482" placeholder="Kota/Kabupaten">
-        </div>
-        <div id='entry.398153844-container'>
-            <label for='entry.398153844'>prov:</label>
-            <input autocomplete="address-level1" type="text" name="entry.398153844" id="entry.398153844" placeholder="Provinsi">
-        </div>
-        <div id='entry.277109060-container'>
-            <label for='entry.277109060'>pos:</label>
-            <input autocomplete="postal-code" type="text" name="entry.277109060" id="entry.277109060" placeholder="Kode Pos">
-        </div>
-        <div id='entry.291225708-container'>
-            <label for='entry.291225708'>patokan:</label>
-            <input autocomplete="on" type="text" name="entry.291225708" id="entry.291225708" placeholder="Rumah depan gang">
+		<div id="alamat-quest">
+				<h3 class="input-header">Alamat Pengiriman</h3>
+				<p class="input-desc">Mohon masukkan nama penerima.</p>
+			<div id='entry.70877665-container' class="quest quest-text">
+				<p class="input-desc">Jalan</p>
+				<input autocomplete="address-line1" type="text" name="entry.70877665" id="entry.70877665" placeholder="Jl. Jalan Rumah no 01 RT/RW 01/02">
+			</div>
+			<div id='entry.721923077-container' class="quest quest-text">
+				<p class="input-desc">Kecamatan</p>
+				<input autocomplete="address-level3" type="text" name="entry.721923077" id="entry.721923077" placeholder="Kecamatan">
+			</div>
+			<div id='entry.2067142482-container' class="quest quest-text">
+				<p class="input-desc">Kota</p>
+				<input autocomplete="address-level2" type="text" name="entry.2067142482" id="entry.2067142482" placeholder="Kota/Kabupaten">
+			</div>
+			<div id='entry.398153844-container' class="quest quest-text">
+				<p class="input-desc">Provinsi</p>
+				<input autocomplete="address-level1" type="text" name="entry.398153844" id="entry.398153844" placeholder="Provinsi">
+			</div>
+			<div id='entry.277109060-container' class="quest quest-text">
+				<p class="input-desc">Kode Pos</p>
+				<input autocomplete="postal-code" type="text" name="entry.277109060" id="entry.277109060" placeholder="Kode Pos">
+			</div>
+		</div>
+        <div id='entry.291225708-container' class="quest quest-textarea">
+				<h3 class="input-header">Patokan alamat</h3>
+				<p class="input-desc">Mohon masukkan nama penerima.</p>
+            <textarea autocomplete="on" name="entry.291225708" id="entry.291225708" placeholder="Rumah depan gang"></textarea>
         </div>
     </fieldset>
 
     <!-- AJANG Group -->
     <fieldset id="ajangGroup" class="form-group hidden">
 		<legend>Pengambilan Ajang</legend>
-        <div id='entry.50010751-container'>
-            <label for='entry.50010751'>password:</label>
+        <div id='entry.50010751-container' class="quest quest-text">
+				<h3 class="input-header">Kata Kunci</h3>
+				<p class="input-desc">Mohon masukkan nama penerima.</p>
             <input autocomplete="on" type="text" name="entry.50010751" id="entry.50010751" placeholder="KATAKUNCI">
         </div>
     </fieldset>
@@ -128,8 +130,9 @@ SAMA?
     <!-- PESAN Group -->
     <fieldset id="pesanGroup" class="form-group hidden">
 		<legend>Ringkasan dan Pesan</legend>
-        <div id='entry.1073892163-container'>
-SURVEY
+        <div id='entry.1073892163-container' class="quest quest-radio">
+			<h3 class="input-header">Survey</h3>
+			<p class="input-desc">Apakah Nama Penerima Sama dengan Nama Pemesan?</p>
             <label for='entry.1073892163_1'>
                 <input type="radio" name="entry.1073892163" id="entry.1073892163_1" value="1"> 1
             </label>
@@ -143,9 +146,10 @@ SURVEY
                 <input type="radio" name="entry.1073892163" id="entry.1073892163_4" value="4"> 4
             </label>
         </div>
-        <div id='entry.927780524-container'>
-            <label for='entry.927780524'>Pesan:</label>
-            <input type="textarea" name="entry.927780524" id="entry.927780524" placeholder="Pesan dan catatan tambahan">
+        <div id="entry.927780524-container" class="quest quest-textarea">
+			<h3 class="input-header">Apakah Nama Penerima Sama dengan Nama Pemesan?</h3>
+			<p class="input-desc">Apakah Nama Penerima Sama dengan Nama Pemesan?</p>
+            <textarea name="entry.927780524" id="entry.927780524" placeholder="Pesan dan catatan tambahan"></textarea>
         </div>
     </fieldset>
 
