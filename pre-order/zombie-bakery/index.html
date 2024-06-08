@@ -7,10 +7,14 @@
     <style>
         .hidden { display: none; }
     </style>
+	<script>
+		var terkirim = false;
+	</script>
 </head>
 <body>
 
 <!-- Form -->
+<iframe id="hiddenkont" name="hiddenkont" onload="if(terkirim){window.location=&quot;terima-kasih&quot;;}" style="display:none;"></iframe>
 <form id="mainForm" action="https://docs.google.com/forms/d/e/1FAIpQLSft2R0WqMWlSfok7_cV19xo0UthC4zp01RVAIvrp1e3vXsUTA/formResponse" method="POST" onsubmit="terkirim=true" target="hiddenkont">
 
     <!-- DATA Group -->
@@ -125,7 +129,6 @@ SURVEY
     <button type="button" id="prevButton" class="hidden">Kembali</button>
     <button type="button" id="nextButton">Lanjut</button>
 </form>
-<iframe id="hiddenkont" name="hiddenkont" onload="if(terkirim){window.location=&quot;/form/pre-order/zombie-bakery/terima-kasih&quot;;}" style="display:none;"></iframe>
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
