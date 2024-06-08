@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,40 +18,40 @@
 <form id="mainForm" action="https://docs.google.com/forms/d/e/1FAIpQLSft2R0WqMWlSfok7_cV19xo0UthC4zp01RVAIvrp1e3vXsUTA/formResponse" method="POST">
 
     <!-- DATA Group -->
-    <fieldset id="dataGroup" class="form-group">
-		<legend>Data Pemesan</legend>
+    <fieldset id="dataGroup" class="form-group" aria-labelledby="dataGroupLabel">
+		<legend id="dataGroupLabel"><h2>Data Pemesan</h2></legend>
         <div id="entry.199079934-container" class="quest quest-text">
-				<h3 class="input-header">Nama</h3>
-				<p class="input-desc">Mohon masukkan nama yang sesuai dengan bukti pembayaran nanti.</p>
-            	<input autocomplete="name" type="text" name="entry.199079934" id="entry.199079934" placeholder="Nama Lengkap">
+				<h3 id="entry.199079934Label" class="input-header"><label for="entry.199079934">Nama</label></h3>
+            	<input aria-describedby="entry.199079934Desc" aria-labelledby="entry.199079934Label" autocomplete="name" type="text" name="entry.199079934" id="entry.199079934" placeholder="Nama Lengkap">
+				<p id="entry.199079934Desc" class="input-desc">Mohon masukkan nama yang sesuai dengan bukti pembayaran nanti.</p>
         </div>
         <div id="entry.603622722-container" class="quest quest-text">
 				<h3 class="input-header">Email</h3>
-				<p class="input-desc">Mohon masukkan email dengan benar.</p>
             	<input autocomplete="email" type="email" name="entry.603622722" id="entry.603622722" placeholder="email@email.com">
+				<p class="input-desc">Mohon masukkan email dengan benar.</p>
+            	<input autocomplete="off" type="email" name="entry.1154729410" id="entry.1154729410" placeholder="email@email.com">
 				<p class="input-desc">Mohon ulangi email.</p>
-            	<input autocomplete="email" type="email" name="entry.1154729410" id="entry.1154729410" placeholder="email@email.com">
         </div>
-        <div id='entry.368837724-container' class="quest quest-text">
-				<h3 class="input-header">WhatsApp</h3>
-				<p class="input-desc">Mohon masukkan email dengan benar.</p>
-            	<input autocomplete="tel" type="text" name="entry.368837724" id="entry.368837724" placeholder="6200000000000">
+        <div id="entry.368837724-container" class="quest quest-text">
+				<h3 id="entry.368837724Label" class="input-header">WhatsApp</h3>
+            	<input aria-labelledby="entry.368837724Label" aria-describedby="entry.368837724Desc" autocomplete="tel" type="text" name="entry.368837724" id="entry.368837724" placeholder="6200000000000">
+				<p id="entry.368837724Desc" class="input-desc">Mohon masukkan email dengan benar.</p>
         </div>
-        <div id='entry.1623915758-container' class="quest quest-text">
+        <div id="entry.1623915758-container" class="quest quest-text">
 				<h3 class="input-header">Media Sosial</h3>
-				<p class="input-desc">Mohon masukkan email dengan benar.</p>
             	<input autocomplete="on" type="text" name="entry.1623915758" id="entry.1623915758" placeholder="@username (Platform)">
+				<p class="input-desc">Mohon masukkan email dengan benar.</p>
         </div>
 		<hr>
         <div id='entry.246909151-container' class="quest quest-produk">
 				<h3 class="input-header">Produk</h3>
-				<p class="input-desc">Mohon masukkan email dengan benar.</p>
             	<input type="number" name="entry.246909151" min="1" id="entry.246909151" value="1" placeholder="2">
+				<p class="input-desc">Mohon masukkan email dengan benar.</p>
         </div>
-        <div id='entry.1175112849-container' class="quest quest-radio">
-			<h3 class="input-header">Metode Pengambilan</h3>
+        <fieldset id='entry.1175112849-container' aria-labelledby="entry.1175112849Label" class="quest quest-radio">
+			<legend id="entry.1175112849Label" class="input-header">Metode Pengambilan</legend>
 			<p class="input-desc">Mohon masukkan email dengan benar.</p>
-            <label for='entry.1175112849_1' class="radiolabel">
+            <label for='entry.1175112849_1' id="entry.1175112849_1Label" class="radiolabel">
                 <input type="radio" name="entry.1175112849" id="entry.1175112849_1" value="kr">
 				<span class="radio-label">Pengiriman</span>
             </label>
@@ -63,7 +63,7 @@
                 <input type="radio" name="entry.1175112849" id="entry.1175112849_3" value="ps">
 				<span class="radio-label">Pesta Komik Bandung</span>
             </label>
-        </div>
+        </fieldset>
     </fieldset>
 
     <!-- KIRIM Group -->
