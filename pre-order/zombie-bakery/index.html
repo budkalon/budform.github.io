@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Handling</title>
+    <style>
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+
+<!-- Form -->
+<form id="mainForm" action="https://docs.google.com/forms/d/e/1FAIpQLSft2R0WqMWlSfok7_cV19xo0UthC4zp01RVAIvrp1e3vXsUTA/formResponse" method="POST">
+
+    <!-- DATA Group -->
+    <div id="dataGroup">
+        <div id="entry.199079934-container">
+            <label for='entry.199079934'>Nama:</label>
+            <input autocomplete="name" type="text" name="entry.199079934" id="entry.199079934" placeholder="Nama Lengkap">
+        </div>
+        <div id='entry.603622722-container'>
+            <label for='entry.603622722'>Email:</label>
+            <input autocomplete="email" type="email" name="entry.603622722" id="entry.603622722" placeholder="email@email.com">
+        </div>
+        <div id='entry.368837724-container'>
+            <label for='entry.368837724'>WhatsApp:</label>
+            <input autocomplete="tel" type="text" name="entry.368837724" id="entry.368837724" placeholder="6200000000000">
+        </div>
+        <div id='entry.1623915758-container'>
+            <label for='entry.1623915758'>Medsos:</label>
+            <input autocomplete="on" type="text" name="entry.1623915758" id="entry.1623915758" placeholder="@username (Platform)">
+        </div>
+        <div id='entry.246909151-container'>
+            <label for='entry.246909151'>Jumlah:</label>
+            <input type="number" name="entry.246909151" min="1" id="entry.246909151" value="1" placeholder="2">
+        </div>
+        <div id='entry.1175112849-container'>
+METODE
+            <label for='entry.1175112849_1'>
+                <input type="radio" name="entry.1175112849" id="entry.1175112849_1" value="kr"> KR
+            </label>
+            <label for='entry.1175112849_2'>
+                <input type="radio" name="entry.1175112849" id="entry.1175112849_2" value="cf"> CF
+            </label>
+            <label for='entry.1175112849_3'>
+                <input type="radio" name="entry.1175112849" id="entry.1175112849_3" value="ps"> PS
+            </label>
+        </div>
+    </div>
+
+    <!-- KIRIM Group -->
+    <div id="kirimGroup" class="hidden">
+        <div id='entry.436673105-container'>
+SAMA?
+            <label for='entry.436673105_1'>
+                <input type="radio" name="entry.436673105" id="entry.436673105_1" value="TRUE"> TRUE
+            </label>
+            <label for='entry.436673105_2'>
+                <input type="radio" name="entry.436673105" id="entry.436673105_2" value="FALSE"> FALSE
+            </label>
+        </div>
+        <div id='entry.1977903973-container' class="hidden">
+            <label for='entry.1977903973'>Nama Penerima:</label>
+            <input type="text" name="entry.1977903973" id="entry.1977903973" placeholder="Nama Penerima">
+        </div>
+        <div id='entry.70877665-container'>
+            <label for='entry.70877665'>lamat1:</label>
+            <input autocomplete="address-line1" type="text" name="entry.70877665" id="entry.70877665" placeholder="Jl. Jalan Rumah no 01 RT/RW 01/02">
+        </div>
+        <div id='entry.721923077-container'>
+            <label for='entry.721923077'>kecamatan:</label>
+            <input autocomplete="address-line2" type="text" name="entry.721923077" id="entry.721923077" placeholder="Kecamatan">
+        </div>
+        <div id='entry.2067142482-container'>
+            <label for='entry.2067142482'>kota:</label>
+            <input autocomplete="address-level2" type="text" name="entry.2067142482" id="entry.2067142482" placeholder="Kota/Kabupaten">
+        </div>
+        <div id='entry.398153844-container'>
+            <label for='entry.398153844'>prov:</label>
+            <input autocomplete="address-level1" type="text" name="entry.398153844" id="entry.398153844" placeholder="Provinsi">
+        </div>
+        <div id='entry.277109060-container'>
+            <label for='entry.277109060'>pos:</label>
+            <input autocomplete="postal-code" type="text" name="entry.277109060" id="entry.277109060" placeholder="Kode Pos">
+        </div>
+        <div id='entry.291225708-container'>
+            <label for='entry.291225708'>patokan:</label>
+            <input autocomplete="on" type="text" name="entry.291225708" id="entry.291225708" placeholder="Rumah depan gang">
+        </div>
+    </div>
+
+    <!-- AJANG Group -->
+    <div id="ajangGroup" class="hidden">
+        <div id='entry.50010751-container'>
+            <label for='entry.50010751'>password:</label>
+            <input autocomplete="on" type="text" name="entry.50010751" id="entry.50010751" placeholder="KATAKUNCI">
+        </div>
+    </div>
+
+    <!-- PESAN Group -->
+    <div id="pesanGroup" class="hidden">
+        <div id='entry.1073892163-container'>
+SURVEY
+            <label for='entry.1073892163_1'>
+                <input type="radio" name="entry.1073892163" id="entry.1073892163_1" value="1"> 1
+            </label>
+            <label for='entry.1073892163_2'>
+                <input type="radio" name="entry.1073892163" id="entry.1073892163_2" value="2"> 2
+            </label>
+            <label for='entry.1073892163_3'>
+                <input type="radio" name="entry.1073892163" id="entry.1073892163_3" value="3"> 3
+            </label>
+            <label for='entry.1073892163_4'>
+                <input type="radio" name="entry.1073892163" id="entry.1073892163_4" value="4"> 4
+            </label>
+        </div>
+        <div id='entry.927780524-container'>
+            <label for='entry.927780524'>Pesan:</label>
+            <input type="textarea" name="entry.927780524" id="entry.927780524" placeholder="Pesan dan catatan tambahan">
+        </div>
+    </div>
+
+    <!-- Pagination Buttons -->
+    <button type="button" id="prevButton" class="hidden">Kembali</button>
+    <button type="button" id="nextButton">Lanjut</button>
+</form>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("mainForm");
+    const groups = ["dataGroup", "kirimGroup", "ajangGroup", "pesanGroup"];
+    let currentStep = 0;
+
+    function showGroup(step) {
+        groups.forEach((group, index) => {
+            document.getElementById(group).classList.toggle("hidden", index !== step);
+        });
+        document.getElementById("prevButton").classList.toggle("hidden", step === 0);
+        document.getElementById("nextButton").textContent = step === groups.length - 1 ? "Submit" : "Next";
+    }
+
+    function validateKirimGroup() {
+        return [...form.querySelectorAll("#kirimGroup input")].every(input => input.value.trim() !== "");
+    }
+
+    document.getElementById("nextButton").addEventListener("click", () => {
+        if (currentStep === 0) {
+            const krChecked = form.querySelector('input[name="entry.1175112849"]:checked')?.value === "kr";
+            const psCfChecked = ["ps", "cf"].includes(form.querySelector('input[name="entry.1175112849"]:checked')?.value);
+
+            if (krChecked) {
+                currentStep++;
+                form.querySelectorAll("#kirimGroup input").forEach(input => input.required = true);
+            } else if (psCfChecked) {
+                currentStep = 2;
+                form.querySelectorAll("#ajangGroup input").forEach(input => input.required = true);
+            }
+        } else if (currentStep === 1) {
+            if (validateKirimGroup()) {
+                currentStep = 3; // Skip to PESAN group
+            }
+        } else if (currentStep === 2) {
+            currentStep++;
+        } else if (currentStep === groups.length - 1) {
+            form.submit();
+        } else {
+            currentStep++;
+        }
+
+        showGroup(currentStep);
+    });
+
+    document.getElementById("prevButton").addEventListener("click", () => {
+        if (currentStep > 0) {
+            currentStep--;
+            showGroup(currentStep);
+        }
+    });
+
+    form.querySelectorAll('input[name="entry.436673105"]').forEach(input => {
+        input.addEventListener("change", (event) => {
+            const showEntry = event.target.value === "FALSE";
+            const entryField = form.querySelector("#entry\\.1977903973-container");
+            entryField.classList.toggle("hidden", !showEntry);
+
+            if (!showEntry) {
+                form.querySelector("#entry\\.1977903973").value = form.querySelector("#entry\\.199079934").value;
+            }
+        });
+    });
+
+    showGroup(currentStep);
+});
+
+
+</script>
+</body>
+</html>
