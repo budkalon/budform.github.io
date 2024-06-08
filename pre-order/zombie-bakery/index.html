@@ -33,6 +33,10 @@
 				<p class="input-desc">Mohon masukkan email dengan benar.</p>
             	<input autocomplete="email" type="email" name="entry.603622722" id="entry.603622722" placeholder="email@email.com">
 			</label>
+            <label for="entry.1154729410" class="mainlabel">
+				<p class="input-desc">Mohon ulangi email.</p>
+            	<input autocomplete="email" type="email" name="entry.1154729410" id="entry.1154729410" placeholder="email@email.com">
+			</label>
         </div>
         <div id='entry.368837724-container' class="quest quest-text">
             <label for='entry.368837724' class="mainlabel">
@@ -169,8 +173,19 @@ document.addEventListener("DOMContentLoaded", function() {
         return [...form.querySelectorAll("#kirimGroup input")].every(input => input.value.trim() !== "");
     }
 
+    function validateEmails() {
+        const email = form.querySelector("#entry\\.603622722").value;
+        const confirmEmail = form.querySelector("#entry\\.1154729410").value;
+        return email === confirmEmail;
+    }
+
     document.getElementById("nextButton").addEventListener("click", () => {
         if (currentStep === 0) {
+            if (!validateEmails()) {
+                alert("Emails do not match. Please confirm your email address.");
+                return;
+            }
+
             entryType = form.querySelector('input[name="entry.1175112849"]:checked')?.value;
             const krChecked = entryType === "kr";
             const psCfChecked = ["ps", "cf"].includes(entryType);
