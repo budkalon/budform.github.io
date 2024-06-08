@@ -167,19 +167,7 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if (currentStep === 2) {
             currentStep++;
         } else if (currentStep === groups.length - 1) {
-            // Prevent default form submission
-            event.preventDefault();
-
-            // Manually submit the form
-            fetch(form.action, {
-                method: form.method,
-                body: new FormData(form)
-            }).then(response => {
-                // Redirect to /thanks page after form submission
-                window.location.href = 'terima-kasih.html';
-            }).catch(error => {
-                console.error('Error submitting the form:', error);
-            });
+            form.submit();
         } else {
             currentStep++;
         }
