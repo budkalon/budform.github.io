@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById(group).classList.toggle("hidden", index !== step);
         });
         document.getElementById("prevButton").classList.toggle("hidden", step === 0);
-        document.getElementById("nextButton").textContent = step === groups.length - 1 ? "Submit" : "Next";
+        document.getElementById("nextButton").textContent = step === groups.length - 1 ? "Kirim" : "Lanjut";
     }
 
     function validateKirimGroup() {
@@ -168,7 +168,6 @@ document.addEventListener("DOMContentLoaded", function() {
             currentStep++;
         } else if (currentStep === groups.length - 1) {
             form.submit();
-			var terkirim = true;
         } else {
             currentStep++;
         }
