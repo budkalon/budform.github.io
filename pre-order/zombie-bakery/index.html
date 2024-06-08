@@ -11,7 +11,8 @@
 <body>
 
 <!-- Form -->
-<form id="mainForm" action="https://docs.google.com/forms/d/e/1FAIpQLSft2R0WqMWlSfok7_cV19xo0UthC4zp01RVAIvrp1e3vXsUTA/formResponse" method="POST">
+<iframe id="hiddenkont" name="hiddenkont" onload="if(submitted){window.location=&quot;terima-kasih&quot;;}" style="display:none;"></iframe>
+<form id="mainForm" action="https://docs.google.com/forms/d/e/1FAIpQLSft2R0WqMWlSfok7_cV19xo0UthC4zp01RVAIvrp1e3vXsUTA/formResponse" method="POST" onsubmit="submitted=true" target="hiddenkont">
 
     <!-- DATA Group -->
     <div id="dataGroup">
