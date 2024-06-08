@@ -155,6 +155,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById("mainForm");
     const groups = ["dataGroup", "kirimGroup", "ajangGroup", "pesanGroup"];
     let currentStep = 0;
+    let entryType = "";
 
     function showGroup(step) {
         groups.forEach((group, index) => {
@@ -170,8 +171,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.getElementById("nextButton").addEventListener("click", () => {
         if (currentStep === 0) {
-            const krChecked = form.querySelector('input[name="entry.1175112849"]:checked')?.value === "kr";
-            const psCfChecked = ["ps", "cf"].includes(form.querySelector('input[name="entry.1175112849"]:checked')?.value);
+            entryType = form.querySelector('input[name="entry.1175112849"]:checked')?.value;
+            const krChecked = entryType === "kr";
+            const psCfChecked = ["ps", "cf"].includes(entryType);
 
             if (krChecked) {
                 currentStep++;
@@ -197,7 +199,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.getElementById("prevButton").addEventListener("click", () => {
         if (currentStep > 0) {
-            currentStep--;
+            if (currentStep === 3) {
+                // PESAN to KIRIM or AJANG
+                currentStep = entryType === "kr" ? 1 : 2;
+            } else if (currentStep === 2) {
+                // AJANG to DATA
+                currentStep = 0;
+            } else if (currentStep === 1) {
+                // KIRIM to DATA
+                currentStep = 0;
+            } else {
+                currentStep--;
+            }
             showGroup(currentStep);
         }
     });
@@ -216,6 +229,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     showGroup(currentStep);
 });
+
 </script>
 </body>
 </html>
